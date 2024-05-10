@@ -7,11 +7,13 @@ body {
   header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
+    text-align: center; /* Center align header content */
   }
   
   header h1 {
     margin: 0;
+    margin-bottom: 10px;
   }
   
   nav ul {
@@ -32,10 +34,18 @@ body {
   
   .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center align container */
     padding: 20px;
   }
+
+  .container h2 {
+    margin-bottom: 20px;
+  }
   
+  .pro-pic {
+    border-radius: 50%;
+  }
+
   .contact-links a {
     display: inline-block;
     margin-right: 10px;
@@ -66,4 +76,41 @@ body {
     display: block;
     margin-top: 10px;
   }
+
+  .about-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    flex: 0 0 150px; /* Fixed width for the profile pic */
+    margin-right: 20px;
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .about-content {
+    flex: 1; /* Take remaining space */
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column; /* Stack columns on smaller screens */
+    }
+    
+    .profile-pic {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .about-content p {
+    text-align: justify; /* Justify the text */
+  }
+
+  
+  
   
