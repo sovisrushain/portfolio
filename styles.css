@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", sans-serif;
   }
   
   header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
-    text-align: center; /* Center align header content */
+    text-align: center; 
   }
   
   header h1 {
     margin: 0;
     margin-bottom: 10px;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
   }
   
   nav ul {
@@ -30,11 +38,12 @@ body {
   nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
   }
   
   .container {
     max-width: 800px;
-    margin: 0 auto; /* Center align container */
+    margin: 0 auto;
     padding: 20px;
   }
 
@@ -66,10 +75,17 @@ body {
   .project-tile {
     border: 1px solid #ccc;
     padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
   }
   
   .project-tile h3 {
     margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   
   .project-tile a {
@@ -83,7 +99,7 @@ body {
   }
   
   .profile-pic {
-    flex: 0 0 150px; /* Fixed width for the profile pic */
+    flex: 0 0 150px; 
     margin-right: 20px;
   }
   
@@ -93,12 +109,12 @@ body {
   }
   
   .about-content {
-    flex: 1; /* Take remaining space */
+    flex: 1; 
   }
   
   @media (max-width: 768px) {
     .about-section {
-      flex-direction: column; /* Stack columns on smaller screens */
+      flex-direction: column; 
     }
     
     .profile-pic {
@@ -108,8 +124,42 @@ body {
   }
 
   .about-content p {
-    text-align: justify; /* Justify the text */
+    text-align: justify;
   }
+
+
+  .contact-links {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+  }
+
+  .contact-links a, .project-tile a  {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      margin-right: 20px;
+      transition: color 0.3s;
+  }
+
+  .contact-links a:hover, .project-tile a:hover {
+      color: #007bff;
+  }
+
+  .project-tile:hover {
+    transform: translate3d(0, -2px, 0); 
+  }
+
+  .project-tile p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+
+
+
+
+
 
   
   
